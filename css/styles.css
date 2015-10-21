@@ -1,0 +1,117 @@
+/* Styles */
+#logo *{
+  transform-origin: 50%, 50%;
+}
+svg {
+  width= 325.501px;
+  height= 144.021px;
+  fill: transparent;
+}
+
+.head-blue,
+.upper-lip,
+.bottom-lip_eye-white,
+.eye,
+.neck {
+  stroke-width: 2px;
+}
+
+.head-blue,
+.upper-lip,
+.bottom-lip_eye-white{
+  stroke: #00295e;
+}
+
+.head-blue {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  animation: draw-blue 2s linear forwards,
+    fill-blue 0.8s 2s forwards;
+}
+
+.upper-lip{
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+}
+.bottom-lip_eye-white{
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+}
+
+.upper-lip,
+.bottom-lip_eye-white{
+  animation: draw-blue 2s linear forwards,
+    fill-white 0.8s 2s forwards;
+}
+
+.eye{
+  transform-origin: center;
+  stroke: #4dbd38;
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+  animation: draw-green 2s linear forwards,
+    fill-green 0.8s 2s forwards;
+}
+
+.neck{
+  stroke: #b2b7bb;
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+  animation: draw-grey 2s linear forwards,
+    fill-grey 0.8s 2s forwards;
+}
+
+.eye-glow {
+  transform-origin: 50% 50%;
+  animation: eye-glow-visible 2.5s 2.8s ease-out forwards,
+    grow 2s 2.8s forwards;
+}
+/* Keyframes */
+@keyframes draw-blue {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-green {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-grey {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-blue{
+  100%{
+    fill: #00295e;
+  }
+}
+
+@keyframes fill-green{
+  100%{
+    fill: #4dbd38;
+  }
+}
+
+@keyframes fill-white{
+  100%{
+    fill: #fff;
+  }
+}
+@keyframes fill-grey{
+  100%{
+    fill: #b2b7bb;
+  }
+}
+@keyframes eye-glow-visible{
+  50% {
+    fill: rgba(130, 209, 116, 1);
+  }
+}
+
+@keyframes grow{
+  50% {
+    transform: scale(1.5);
+  }
+}

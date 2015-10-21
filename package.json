@@ -1,0 +1,11 @@
+{
+  "name": "seahawks_svg_animation",
+  "version": "1.0.0",
+  "description": "simple animation with seahawks logo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonio Jaramillo",
+  "license": "MIT"
+}
